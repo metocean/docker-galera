@@ -1,0 +1,9 @@
+{
+  "service": {
+    "name": "galera",
+    "port": 3306,
+    "terminate_on_leave": true,
+    "checks": [{"script": "mysqladmin ping",
+                "interval": "10s"}]
+  }
+}
